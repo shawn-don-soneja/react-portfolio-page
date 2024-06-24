@@ -143,7 +143,7 @@ const projects = [
     name: "Real Estate DCF Valuation",
     description: 'This is my personal, built-from-scratch, Real Estate DCF. I’ve used this to try and value real estate investments, specifically rental properties',
     svn_url: null,
-    url: 'https://docs.google.com/spreadsheets/d/19sdzmD47srzTaQ3_jaKKsID8iIa3kE8LCTBKErwNXKw/edit?usp=sharing',
+    url: 'https://docs.google.com/spreadsheets/d/1D5qoqqLlWCA6VI7bWiq9R7GUojOBdjImIpcEv-t1IWg/edit?usp=sharing',
     languages_url: null
   }
 ]
