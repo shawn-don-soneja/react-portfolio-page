@@ -91,7 +91,7 @@ const musicBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/Headshot.jpg"),
+  imageLink: require("../editable-stuff/Shawn Resume-2024 (AutoRecovered) - REVAMP.pdf"),
   imageSize: 335,
   message:
 `Hey, what's up, I'm Shawn! Professionally, I'm 'functional technologist'.
@@ -105,7 +105,7 @@ My professional interests outside of Salesforce & IT Consulting lie in learning 
 Oh and on the side of that, I like to (try to) make music, play some sports, and I am an avid enjoyer of adventures. 
 
 Thank you for dropping by! I encourage you to check out some of My Work below! You're also welcome to look at my resume, if you're into that sort of thing`,
-  resume: "https://docs.google.com/document/d/1ygVQb7nLXuLV-Q8-zHP4-0miR-1I9hNq/edit?usp=sharing&ouid=108614653152877262110&rtpof=true&sd=true",
+  resume: require("../editable-stuff/resume.pdf"),
 };
 
 const musicAbout = {
