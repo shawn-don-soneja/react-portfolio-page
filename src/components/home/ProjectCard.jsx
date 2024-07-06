@@ -13,6 +13,7 @@ const ProjectCard = ({ value }) => {
     stargazers_count,
     languages_url,
     pushed_at,
+    tags
   } = value;
   return (
     <Col md={6}>
@@ -28,11 +29,12 @@ const ProjectCard = ({ value }) => {
             <Skeleton count={0} />
           )}
           {value ? (
-            <CardFooterSimple star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} name={name} url={url}/>
+            <CardFooterSimple star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} name={name} url={url} tags={tags}/>
           ) : (
             <Skeleton />
           )}
         </Card.Body>
+        
       </Card>
     </Col>
   );
@@ -117,7 +119,7 @@ const Language = ({ languages_url, repo_url }) => {
   );
 };
 
-const CardFooter = ({ star_count, repo_url, pushed_at, name, url}) => {
+const CardFooter = ({ star_count, repo_url, pushed_at, name, url, tags}) => {
   const [updated_at, setUpdated_at] = useState("0 mints");
 
   const handleUpdatetime = useCallback(() => {
@@ -158,7 +160,7 @@ const CardFooter = ({ star_count, repo_url, pushed_at, name, url}) => {
   );
 };
 
-const CardFooterSimple = ({ star_count, repo_url, pushed_at, name, url}) => {
+const CardFooterSimple = ({ star_count, repo_url, pushed_at, name, url, tags}) => {
 
   return (
     <p className="card-text">
@@ -167,6 +169,15 @@ const CardFooterSimple = ({ star_count, repo_url, pushed_at, name, url}) => {
           <i className={repo_url === null ? "fa fa-external-link-square-alt" : "fab fa-github"} /> {" "}
           <small>Repository</small>
         </a>
+      }
+      {tags === null ? <></> :
+        tags?.map((tag) => {
+          return(
+            <span className="badge m-2 bg-light text-dark">
+              {tag}
+            </span>
+          )
+        })
       }
     </p>
   );

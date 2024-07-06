@@ -130,21 +130,24 @@ const projects = [
     description: 'We built Hexient to improve hiring, by making it more transparent and data-driven. As the primary architect and developer, I built an enterprise-grade Recruiting Tool, using React and a number of AWS services for the back-end and authentication.',
     svn_url: null,
     url: 'https://hexient.io',
-    languages_url: null
+    languages_url: null,
+    tags: ['AWS', 'React', 'HR']
   },
   {
     name: "Financial Dashboard - US Economy",
     description: 'Financial Dashboard which tracks a few key, Macroeconomic indicators for the US. I perform ongoing predictions on these key indicators, using a basic LTSM (machine learning) model.',
     svn_url: 'https://github.com/shawn-don-soneja/shawn-sf-dev-ed',
     url: 'https://d5e0000012hzdeai-dev-ed.my.site.com/financedashboard2/s/',
-    languages_url: null
+    languages_url: null,
+    tags: ['Salesforce', 'LWC', 'Apex', 'ML']
   },
   {
     name: "Real Estate DCF Valuation",
     description: 'This is my personal, built-from-scratch, Real Estate DCF. I’ve used this to try and value real estate investments, specifically rental properties',
     svn_url: null,
     url: 'https://docs.google.com/spreadsheets/d/1D5qoqqLlWCA6VI7bWiq9R7GUojOBdjImIpcEv-t1IWg/edit?usp=sharing',
-    languages_url: null
+    languages_url: null,
+    tags: ['Finance', 'Real Estate', 'Valuation Skills']
   }
 ]
 
@@ -198,16 +201,16 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "Javascript", value: 90 },
-    { name: "CSS", value: 90 },
-    { name: "React", value: 85 },
-    { name: "Swift", value: 35 },
+    { name: "Javascript", value: 90, icon: <i class="fab fa-js-square"></i> },
+    { name: "CSS", value: 90, icon: <i class="fab fa-css3"></i>},
+    { name: "React", value: 85, icon: <i class="fab fa-react"></i>},
+    { name: "Swift", value: 35, icon: <i class="fab fa-app-store-ios"></i> },
     
-    { name: "Git & Version Control", value: 90 },
-    { name: "Python", value: 75 },
-    { name: "Java", value: 65 },
+    { name: "Git & Version Control", value: 90, icon: <i class="fas fa-code-branch"></i> },
+    { name: "Python", value: 75 , icon: <i class="fab fa-python"></i>},
+    { name: "Java", value: 65, icon: <i class="fab fa-java"></i> },
 
-    { name: "PHP", value: 55 },
+    { name: "PHP", value: 55, icon: <i class="fab fa-php"></i>},
     
   ],
   softSkills: [
