@@ -13,11 +13,11 @@ const mainBody = {
   message: "the technologist",
   icons: [
     {
-      image: "fa-github",
+      image: "fab fa-github fa-3x socialicons",
       url: "https://github.com/shawn-don-soneja",
     },
     {
-      image: "fa-linkedin",
+      image: "fab fa-linkedin fa-3x socialicons",
       url: "https://www.linkedin.com/in/shawn-soneja-325521144/",
     },
     /*
@@ -46,12 +46,16 @@ const musicBody = {
   message: "the artist",
   icons: [
     {
-      image: "fa-soundcloud",
+      image: "fab fa-soundcloud fa-3x socialicons",
       url: "https://soundcloud.com/user-207519198",
     },
     {
-      image: "fa-instagram",
+      image: "fab fa-instagram fa-3x socialicons",
       url: "https://www.instagram.com/essexstreetsounds/",
+    },
+    {
+      image: "fas fa-tshirt fa-3x socialicons",
+      url: "https://soneja-shirts.square.site/",
     },
     /*
     {
@@ -237,7 +241,7 @@ const skills = {
 
 // GET IN TOUCH SECTION
 const getInTouch = {
-  show: true,
+  show: false,
   heading: "Get In Touch",
   message:
     "I'm always open to collaboration, and am happy to chat. Feel free to drop me a line at",
