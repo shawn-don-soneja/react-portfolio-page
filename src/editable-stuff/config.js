@@ -55,7 +55,7 @@ const musicBody = {
     },
     {
       image: "fas fa-tshirt fa-3x socialicons",
-      url: "https://soneja-shirts.square.site/",
+      url: "https://soneja-shirts.square.site/s/shop",
     },
     /*
     {
