@@ -141,9 +141,9 @@ const projects = [
     name: "Financial Dashboard - US Economy",
     description: 'Financial Dashboard which tracks a few key, Macroeconomic indicators for the US. I perform ongoing predictions on these key indicators, using a basic LTSM (machine learning) model.',
     svn_url: 'https://github.com/shawn-don-soneja/shawn-sf-dev-ed',
-    url: 'https://d5e0000012hzdeai-dev-ed.my.site.com/financedashboard2/s/',
+    url: 'https://next-js-practice-eight-ruddy.vercel.app/charts',
     languages_url: null,
-    tags: ['Salesforce', 'LWC', 'Apex', 'ML']
+    tags: ['Salesforce', 'LWC', 'Apex', 'ML', 'NextJs']
   },
   {
     name: "Real Estate DCF Valuation",
