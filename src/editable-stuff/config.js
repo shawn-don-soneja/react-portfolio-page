@@ -139,7 +139,7 @@ const projects = [
   },
   {
     name: "Financial Dashboard - US Economy",
-    description: 'Financial Dashboard which tracks a few key, Macroeconomic indicators for the US. I perform ongoing predictions on these key indicators, using a basic LTSM (machine learning) model.',
+    description: 'Financial Dashboard which tracks a few key, Macroeconomic indicators for the US. I perform ongoing predictions on these key indicators, using my own prediction service.',
     svn_url: 'https://github.com/shawn-don-soneja/shawn-sf-dev-ed',
     url: 'https://next-js-practice-eight-ruddy.vercel.app/charts',
     languages_url: null,
@@ -152,6 +152,14 @@ const projects = [
     url: 'https://docs.google.com/spreadsheets/d/1D5qoqqLlWCA6VI7bWiq9R7GUojOBdjImIpcEv-t1IWg/edit?usp=sharing',
     languages_url: null,
     tags: ['Finance', 'Real Estate', 'Valuation Skills']
+  },
+  {
+    name: "Scikit-Learn Prediction Service",
+    description: 'I built a prediction api service using AWS ECR, leveraging the scikit-learn library, leverage its LinearRegresion model',
+    svn_url: 'https://github.com/shawn-don-soneja/python-predictions/blob/develop/projects/Linear%20Regression/main_for_api.py',
+    url: 'https://next-js-practice-eight-ruddy.vercel.app/charts',
+    languages_url: null,
+    tags: ['Python', 'AWS', 'scikit-learn']
   }
 ]
 
