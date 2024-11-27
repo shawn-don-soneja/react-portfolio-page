@@ -109,7 +109,7 @@ My professional interests outside of Salesforce & IT Consulting lie in learning 
 Oh and on the side of that, I like to (try to) make music, play some sports, and I am an avid enjoyer of adventures. 
 
 Thank you for dropping by! I encourage you to check out some of My Work below! You're also welcome to look at my resume, if you're into that sort of thing`,
-  resume: "https://drive.google.com/file/d/1wTzX03sfVu-4MPTg3nJeiubarK4eQZwE/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1MPoNcgG_L6LkWnEU9bsX0iJDguPCLSra/view?usp=sharing",
 };
 
 const musicAbout = {
