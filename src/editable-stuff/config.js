@@ -143,6 +143,7 @@ const projects = [
     svn_url: 'https://github.com/shawn-don-soneja/shawn-sf-dev-ed',
     url: 'https://next-js-practice-eight-ruddy.vercel.app/charts',
     languages_url: null,
+    writeup_url: 'https://humorous-drink-54e.notion.site/Macro-Predictor-Project-Writeup-139b0558046180779d5dfa8641ed15f5',
     tags: ['Salesforce', 'LWC', 'Apex', 'ML', 'NextJs']
   },
   {

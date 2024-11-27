@@ -13,7 +13,8 @@ const ProjectCard = ({ value }) => {
     stargazers_count,
     languages_url,
     pushed_at,
-    tags
+    tags,
+    writeup_url
   } = value;
   return (
     <Col md={6}>
@@ -21,7 +22,7 @@ const ProjectCard = ({ value }) => {
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
-          <CardButtons url={url} />
+          <CardButtons url={url} article={writeup_url}/>
           <hr />
           {languages_url ? (
             <Language languages_url={languages_url} repo_url={svn_url} />
@@ -40,21 +41,29 @@ const ProjectCard = ({ value }) => {
   );
 };
 
-const CardButtons = ({ url }) => {
+const CardButtons = ({ url, article }) => {
   return (
-    <div className="d-grid gap-2 d-md-block">
-      {/*
-      <a
-        href={`${svn_url}/archive/master.zip`}
-        className="btn btn-outline-secondary mx-2"
-      >
-        <i className="fab fa-github" /> Clone Project
-      </a>
-      */}
-      <a href={url} target=" _blank" className="btn btn-outline-secondary mx-2">
-      View Project <i className="fa fa-arrow-circle-right" /> 
-      </a>
-    </div>
+    <>
+      <div className="d-flex gap-2 justify-content-md-start justify-content-center">
+        {/* Uncomment this section if needed */}
+        {/*
+        <a
+          href={`${svn_url}/archive/master.zip`}
+          className="btn btn-outline-secondary"
+        >
+          <i className="fab fa-github" /> Clone Project
+        </a>
+        */}
+        <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-outline-secondary">
+          View Project <i className="fa fa-arrow-circle-right" />
+        </a>
+        {article && (
+          <a href={article} target="_blank" rel="noopener noreferrer" className="btn btn-outline-secondary">
+            Read Article <i className="fa fa-arrow-circle-right" />
+          </a>
+        )}
+      </div>
+    </>
   );
 };
 
@@ -164,12 +173,6 @@ const CardFooterSimple = ({ star_count, repo_url, pushed_at, name, url, tags}) =
 
   return (
     <p className="card-text">
-      {repo_url === null ? <></> : 
-        <a href={repo_url} className="text-dark text-decoration-none">
-          <i className={repo_url === null ? "fa fa-external-link-square-alt" : "fab fa-github"} /> {" "}
-          <small>Repository</small>
-        </a>
-      }
       {tags === null ? <></> :
         tags?.map((tag) => {
           return(
@@ -178,6 +181,12 @@ const CardFooterSimple = ({ star_count, repo_url, pushed_at, name, url, tags}) =
             </span>
           )
         })
+      }
+      {repo_url === null ? <></> : 
+        <a href={repo_url} target="_blank" className="badge m-1 bg-primary text-light text-decoration-none">
+          <i className={repo_url === null ? "fa fa-external-link-square-alt" : "fa fa-external-link-square-alt"} /> {" "}
+          <small>Repository</small>
+        </a>
       }
     </p>
   );
