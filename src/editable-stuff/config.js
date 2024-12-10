@@ -156,7 +156,7 @@ const projects = [
   },
   {
     name: "Scikit-Learn Prediction Service",
-    description: 'I built a prediction api service using AWS ECR, leveraging the scikit-learn library, leverage its LinearRegresion model',
+    description: 'I built a prediction api service using AWS ECR, leveraging the scikit-learn library, leverage its LinearRegression model',
     svn_url: 'https://github.com/shawn-don-soneja/python-predictions/blob/develop/projects/Linear%20Regression/main_for_api.py',
     url: 'https://next-js-practice-eight-ruddy.vercel.app/charts',
     languages_url: null,
