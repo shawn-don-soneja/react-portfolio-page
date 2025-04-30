@@ -1,30 +1,41 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import SkillsTab from "./SkillsTab";
 import Row from "react-bootstrap/Row";
 import { Jumbotron } from "./migration";
 import { Container } from "react-bootstrap";
-import { useScrollPosition } from "../../hooks/useScrollPosition";
 
 const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
-  const skillsTabRef = React.useRef(null);
-  const [isScrolled, setIsScrolled] = React.useState(false);
-  //const navbarDimensions = useResizeObserver(navbarMenuRef);
+  const jumbotronRef = useRef(null); // this replaces skillsTabRef
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  useScrollPosition(
-    ({ prevPos, currPos }) => {
-      if (!isScrolled && currPos.y - 400 < 0) setIsScrolled(true);
-    },
-    [],
-    skillsTabRef
-  );
+  useEffect(() => {
+    const element = jumbotronRef.current;
+    if (!element || isScrolled) return;
+  
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsScrolled(true);
+          observer.unobserve(element);
+        }
+      },
+      { threshold: 0 }
+    );
+  
+    observer.observe(element);
+  
+    return () => {
+      if (element) observer.unobserve(element);
+    };
+  }, [isScrolled]);
+  
+
   return (
-    <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills">
+    <Jumbotron ref={jumbotronRef} fluid className="bg-white m-0" id="skills">
       <Container className="p-5 ">
-        <h2 ref={skillsTabRef} className="display-4 pb-5 text-center">
-          {heading}
-        </h2>
+        <h2 ref={jumbotronRef} className="display-4 pb-5 text-center">{heading}</h2>
         <Tabs
           className="skills-tabs"
           defaultActiveKey="hard-skills"
