@@ -98,17 +98,15 @@ const about = {
   imageLink: require("../editable-stuff/Headshot.jpg"),
   imageSize: 335,
   message:
-`Hey, what's up, I'm Shawn! Professionally, I'm 'functional technologist'.
+`Hey, I’m Shawn — a software engineer who loves building and business.
 
-That is to say, I enjoy both the 'business' and 'technical' sides of solving problems. On one hand, I enjoy supporting sales, research, and strategy generation. And on the other hand, I enjoy the process of *building* solutions, with tools like React, Salesforce, and AWS. 
+I thrive at the intersection of tech and strategy. As a Software Engineer and Technical Lead at Accenture, I’ve led teams and delivered enterprise solutions — while also supporting product direction, sales, and research efforts.
 
-Currently I'm a Salesforce Consultant at Accenture, where I fulfill a 'Technical Lead' role, and am transitioning into more of a 'Technical Architect / Manager' role. 
-  
-My professional interests outside of Salesforce & IT Consulting lie in learning about, and finding cool ways to apply the latest technologies. Et al. machine learning, or designing enterprise architecture. 
+I’m especially interested in markets, algorithmic trading, and the applications of ML & AI in our lives. I enjoy turning complex problems into smart, scalable solutions — whether that’s in code, data, or business strategy.
 
-Oh and on the side of that, I like to (try to) make music, play some sports, and I am an avid enjoyer of adventures. 
+Outside of work, I’m into making music, playing sports, and adventures.
 
-Thank you for dropping by! I encourage you to check out some of My Work below! You're also welcome to look at my resume, if you're into that sort of thing`,
+Feel free to check out my work below!`,
   //resume: "https://drive.google.com/file/d/1MPoNcgG_L6LkWnEU9bsX0iJDguPCLSra/view?usp=sharing",
 };
 
