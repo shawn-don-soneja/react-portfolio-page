@@ -137,20 +137,20 @@ const projects = [
     tags: ['Salesforce', 'LWC', 'Apex', 'ML', 'NextJs']
   },
   {
-    name: "Real Estate DCF Valuation",
-    description: 'This is my personal, built-from-scratch, Real Estate DCF. I’ve used this to try and value real estate investments, specifically rental properties',
-    svn_url: null,
-    url: 'https://docs.google.com/spreadsheets/d/1D5qoqqLlWCA6VI7bWiq9R7GUojOBdjImIpcEv-t1IWg/edit?usp=sharing',
-    languages_url: null,
-    tags: ['Finance', 'Real Estate', 'Valuation Skills']
-  },
-  {
     name: "Scikit-Learn Prediction Service",
     description: 'I built a prediction api service using AWS ECR, leveraging the scikit-learn library, leverage its LinearRegression model',
     svn_url: 'https://github.com/shawn-don-soneja/python-projects-public/blob/main/projects/Linear%20Regression/main_for_api.py',
     url: 'https://next-js-practice-eight-ruddy.vercel.app/charts',
     languages_url: null,
     tags: ['Python', 'AWS', 'scikit-learn']
+  },
+  {
+    name: "Real Estate DCF Valuation",
+    description: 'This is my personal, built-from-scratch, Real Estate DCF. I’ve used this to try and value real estate investments, specifically rental properties',
+    svn_url: null,
+    url: 'https://docs.google.com/spreadsheets/d/1D5qoqqLlWCA6VI7bWiq9R7GUojOBdjImIpcEv-t1IWg/edit?usp=sharing',
+    languages_url: null,
+    tags: ['Finance', 'Real Estate', 'Valuation Skills']
   }
   /*
   Temporarily removing this project from portfolio while the domain is down
