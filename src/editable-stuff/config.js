@@ -128,14 +128,6 @@ For now, though, I only have some beats to show for all of this interest. If you
 // PROJECTS SECTION
 const projects = [
   {
-    name: "Hexient",
-    description: 'We built Hexient to improve hiring, by making it more transparent and data-driven. As the primary architect and developer, I built an enterprise-grade Recruiting Tool, using React and a number of AWS services for the back-end and authentication.',
-    svn_url: null,
-    url: 'https://hexient.io',
-    languages_url: null,
-    tags: ['AWS', 'React', 'HR']
-  },
-  {
     name: "Financial Dashboard - US Economy",
     description: 'Financial Dashboard which tracks a few key, Macroeconomic indicators for the US. I perform ongoing predictions on these key indicators, using my own prediction service.',
     svn_url: 'https://github.com/shawn-don-soneja/shawn-sf-dev-ed',
@@ -160,6 +152,17 @@ const projects = [
     languages_url: null,
     tags: ['Python', 'AWS', 'scikit-learn']
   }
+  /*
+  Temporarily removing this project from portfolio while the domain is down
+  {
+    name: "Hexient",
+    description: 'We built Hexient to improve hiring, by making it more transparent and data-driven. As the primary architect and developer, I built an enterprise-grade Recruiting Tool, using React and a number of AWS services for the back-end and authentication.',
+    svn_url: null,
+    url: 'https://hexient.io',
+    languages_url: null,
+    tags: ['AWS', 'React', 'HR']
+  },
+  */
 ]
 
 
