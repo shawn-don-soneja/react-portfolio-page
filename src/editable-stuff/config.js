@@ -131,7 +131,7 @@ const projects = [
     name: "Financial Dashboard - US Economy",
     description: 'Financial Dashboard which tracks a few key, Macroeconomic indicators for the US. I perform ongoing predictions on these key indicators, using my own prediction service.',
     svn_url: 'https://github.com/shawn-don-soneja/shawn-sf-dev-ed',
-    url: 'https://next-js-practice-eight-ruddy.vercel.app/charts',
+    url: 'https://projects.shawnsoneja.com/charts',
     languages_url: null,
     writeup_url: 'https://humorous-drink-54e.notion.site/Macro-Predictor-Project-Writeup-139b0558046180779d5dfa8641ed15f5',
     tags: ['Salesforce', 'LWC', 'Apex', 'ML', 'NextJs']
@@ -140,7 +140,7 @@ const projects = [
     name: "Scikit-Learn Prediction Service",
     description: 'I built a prediction api service using AWS ECR, leveraging the scikit-learn library, leverage its LinearRegression model',
     svn_url: 'https://github.com/shawn-don-soneja/python-projects-public/blob/main/projects/Linear%20Regression/main_for_api.py',
-    url: 'https://next-js-practice-eight-ruddy.vercel.app/charts',
+    url: 'https://projects.shawnsoneja.com/charts',
     languages_url: null,
     tags: ['Python', 'AWS', 'scikit-learn']
   },
