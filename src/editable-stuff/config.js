@@ -6,11 +6,11 @@ const navBar = {
 
 // Main Body SECTION
 const mainBody = {
-  gradientColors: "#087E8B, #DC7F9B, #3C3C3C, #C1CAD6, #C1839F",
+  gradientColors: "#0F5C1E, #5F6ABF, #3C3C3C, #C1CAD6, #5F9ABF",
   firstName: "Shawn",
   middleName: "",
   lastName: "Soneja",
-  message: "the technologist",
+  message: "trying to build cool things",
   icons: [
     {
       image: "fab fa-github fa-3x socialicons",
@@ -20,10 +20,14 @@ const mainBody = {
       image: "fab fa-linkedin fa-3x socialicons",
       url: "https://www.linkedin.com/in/shawn-soneja-325521144/",
     },
+    {
+      image: "fas fa-tshirt fa-3x socialicons",
+      url: "https://itssomi.square.site/s/shop",
+    }
     /*
     {
       image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
+      url: "https://itssomi.square.site/s/shop",
     },
     {
       image: "fa-instagram",
@@ -55,7 +59,7 @@ const musicBody = {
     },
     {
       image: "fas fa-tshirt fa-3x socialicons",
-      url: "https://soneja-shirts.square.site/s/shop",
+      url: "https://itssomi.square.site/s/shop",
     },
     /*
     {
@@ -100,11 +104,11 @@ const about = {
   message:
 `Hey, I’m Shawn — a software engineer who loves building and business.
 
-I thrive at the intersection of tech and strategy. As a Software Engineer and Technical Lead at Accenture, I’ve led teams and delivered enterprise solutions — while also supporting product direction, sales, and research efforts.
+I thrive at the intersection of tech and strategy. I'm currently a Senior Software Engineer at Capital One, and previously worked as a Consultant at Accenture. I've led teams, guided strategy, and built enterprise-grade software.
 
-I’m especially interested in markets, algorithmic trading, and the applications of ML & AI in our lives. I enjoy turning complex problems into smart, scalable solutions — whether that’s in code, data, or business strategy.
+I’m currently interested in markets, algorithmic trading, and the applications of ML & AI in our lives. I enjoy turning complex problems into smart, scalable solutions — whether that’s in code, data, or business strategy.
 
-Outside of work, I’m into making music, playing sports, and adventures.
+Outside of work, I’m into making music, playing sports, and going on adventures.
 
 Feel free to check out my work below!`,
   //resume: "https://drive.google.com/file/d/1MPoNcgG_L6LkWnEU9bsX0iJDguPCLSra/view?usp=sharing",
