@@ -10,7 +10,7 @@ const mainBody = {
   firstName: "Shawn",
   middleName: "",
   lastName: "Soneja",
-  message: "trying to build cool things",
+  message: "trying to build cool stuff",
   icons: [
     {
       image: "fab fa-github fa-3x socialicons",
