@@ -14,3 +14,8 @@ Understand my skillset
 <br/>
 
 This code was forked from an open source project, which you can learn more about here: https://github.com/hashirshoaeb/home
+
+### Local Dev
+```
+npm start
+```
