@@ -3,6 +3,9 @@ const navBar = {
   show: true,
 };
 
+const navBarLinks = {
+  link1: "https://projects.shawnsoneja.com",
+}
 
 // Main Body SECTION
 const mainBody = {
@@ -284,4 +287,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, musicBody, musicAbout, about, repos, projects, musicRepos, skills, leadership, getInTouch, experiences,  };
+export { navBar, mainBody, musicBody, musicAbout, about, repos, projects, musicRepos, skills, leadership, getInTouch, experiences, navBarLinks};
