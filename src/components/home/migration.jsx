@@ -21,6 +21,7 @@ export const NavLink = (props) => {
     >
       <span className={`nav-item lead ${props.className}`}>
         {props.children}
+        {props.icon && <span style={{marginLeft: "10px", fontSize: "17px"}}><i className={props.icon}/></span>}
       </span>
     </Nav.Link>
   );
