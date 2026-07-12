@@ -13,7 +13,7 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
   useEffect(() => {
     const element = jumbotronRef.current;
     if (!element || isScrolled) return;
-  
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -23,18 +23,18 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
       },
       { threshold: 0 }
     );
-  
+
     observer.observe(element);
-  
+
     return () => {
       if (element) observer.unobserve(element);
     };
   }, [isScrolled]);
-  
+
 
   return (
     <Jumbotron ref={jumbotronRef} fluid className="bg-white m-0" id="skills">
-      <Container className="p-5 ">
+      <Container>
         <h2 ref={jumbotronRef} className="display-4 pb-5 text-center">{heading}</h2>
         <Tabs
           className="skills-tabs"
