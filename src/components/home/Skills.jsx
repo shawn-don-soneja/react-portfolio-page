@@ -34,7 +34,7 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
 
   return (
     <Jumbotron ref={jumbotronRef} fluid className="bg-white m-0" id="skills">
-      <Container>
+      <Container className="pb-5">
         <h2 ref={jumbotronRef} className="display-4 pb-5 text-center">{heading}</h2>
         <Tabs
           className="skills-tabs"
