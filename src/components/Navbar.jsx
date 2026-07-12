@@ -39,7 +39,7 @@ const Navigation = React.forwardRef((props, ref) => {
       expand="lg"
     >
       <Navbar.Brand className="navbar-brand" href={"#home"}>
-        {`${'Shawn Soneja'}`}
+        {`${'Home'}`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
